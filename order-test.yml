@@ -9,6 +9,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false
     username: root
     password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wll
+    password: 123
   jpa:
     hibernate:
       ddl-auto: update
