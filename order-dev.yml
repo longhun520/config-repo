@@ -9,10 +9,22 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=false
     username: root
     password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: 127.0.0.1
+    port: 6379
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+girl:
+  name: zhu
+  age: 51
+
 #由于加载顺序，config是一个微服务，所以这个配置必须配在项目里
 # eureka:
 #   client:
